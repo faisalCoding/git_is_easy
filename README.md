@@ -1,3 +1,4 @@
+<p align="center"><img src="https://github.com/faisalCoding/git_is_easy/blob/main/gitlogo.jpg?raw=true" width="600" alt="git Logo"></p>
 ## ❓ ما هو Git؟
 
 
