@@ -141,7 +141,7 @@ ls -la
 ‏ولاحظ أنه لا يوجد سوى مجلدين فارغين و هذا يدل على انه الى هذه اللحظة لا يوجد اي نسخ احتياطية للمشروع وان قاعدة البيانات فارغة تماما 
 دعنا الان نقوم بعمل `commit` لنجعل هذا المجلد غير فارغ
 اولا نحتاج ان نعرف مكونات ال `commit` يتكون ال `commit` من :-
-- tree for main project folder
+- tree   <sup> <---- for main project folder</sup>
 - parent commit
 - author
 - commiter
