@@ -66,12 +66,10 @@
 object/
   ├── blob ---> # (files) and (content)s this files 
   ├── tree ---> # main project (folder) or subfolders(trees) -> has files(blobs) and subfolders(trees)
-        ├── tree for -> main project folder
-        └── tree for -> subfolders
-  ├── commit -> # snapshot for the main project folder tree 
-  .
-  .
-  .
+  │     ├── tree for -> main project folder
+  │     └── tree for -> subfolders
+  ├── commit -> # snapshot for the main project folder tree
+  └── tag -> # naming of commet
 ```
  
 
@@ -128,7 +126,7 @@ ls -la
 ```
 
 سنشرح وظيفة كل ملف و مجلد باختصار لاحقا لكن هل لاحظت مجلد `objects/` ؟ مر معنا سابقا هذا الاسم ! نعم صحيح هو نفس ما تحدثنا عنه 
-هنا `git` يقوم بحفظ جميع ال `objects` بكل انواها ( `blobs` `trees` `commits` ) وهذا المجلد بمثابة `database` لبرنامج git
+هنا `git` يقوم بحفظ جميع ال `objects` بكل انواها ( `blobs` `trees` `tag` `commits` ) وهذا المجلد بمثابة `database` لبرنامج git
 
 ‏ إذا قمنا بفتح مجلد  `objects/` سيظهر لنا التالي
 
@@ -183,6 +181,9 @@ git write-tree
 echo "the home page" >> home_page.html 
 ```
 لعمل (`blob`) من ملف `home_page.html` 
+
+ـ<sup>`-w تعني كلمة write اي قم بكتابة هذا الـblob داخل قاعدة البيانات database وهي ملف الـ.git/bjects/ `</sup>
+
 ```
 git hash-object -w home_page.html
 ```
