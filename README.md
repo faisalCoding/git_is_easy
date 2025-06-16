@@ -207,3 +207,33 @@ git hash-object -w home_page.html
 
 
 
+
+
+
+
+
+
+```
+echo -e "blob 15\0im content file" | sha1sum
+```
+- امر echo يقوم بطباعة نص ما
+- خيار -e يعني قم باعتبار الـ empty-byte `00` كما هو مكتوب في الامر اعلاه `\0`
+
+```
+git hash-object -w home_page.html
+```
+
+
+```
+git hash-object -w home_page.html
+```
+
+
+```
+git hash-object -w home_page.html
+```
+
+
+
+
+
